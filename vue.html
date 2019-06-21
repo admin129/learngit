@@ -5,19 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="./vue.min.js"></script>
 </head>
 <body>
     <div id="app">
-        {{mes.data}}
+       <P>{{asd}} </P>
     </div>
-    <script>
-        (function(){
-            new Vue({
-                el:"app",
-                data:"hello"
-            })
-        })    
+    <script type="text/javascript">
+        var vm = new Vue({
+            el: '#app',
+            data: {
+                asd:"hello world"
+            }
+
+            
+            
+        })
     </script>
-    <script src="./vue.js"></script>
+    
 </body>
 </html>
